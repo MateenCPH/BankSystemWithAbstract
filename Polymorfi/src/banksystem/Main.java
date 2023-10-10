@@ -3,10 +3,6 @@ package banksystem;
 public class Main {
     public static void main(String[] args) {
 
-
-
-
-
 //        Account b = new Account();
 //        a.deposit(100);
 //        System.out.println("Account a: " + a.getBalance());
@@ -37,6 +33,22 @@ public class Main {
         System.out.println("VipAccount: " + v.getBalance());
         v.withdraw(100000);
         System.out.println("VipAccount: " + v.getBalance());
+
+        Account i = new investAccount();
+        System.out.println("InvestAccount: " + i.getBalance());
+        i.deposit(5000000);
+        System.out.println("InvestAccount: " + i.getBalance());
+        i.withdraw(1000000);
+        System.out.println("InvestAccount: " + i.getBalance());
+        i.withdraw(1000000);
+        System.out.println("InvestAccount: " + i.getBalance());
+        i.withdraw(1000000);
+        System.out.println("InvestAccount: " + i.getBalance());
+        i.withdraw(1000000);
+        System.out.println("InvestAccount: " + i.getBalance());
+        i.withdraw(999999);
+        System.out.println("InvestAccount: " + i.getBalance());
+
 
     }
 }
